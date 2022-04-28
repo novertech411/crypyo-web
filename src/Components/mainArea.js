@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 import business from '../img/marketing.mp4';
 import circle from '../img/circles.svg';
-import { InnerLayout } from '../Layouts';
+import { InnerLayout } from '../Layout';
+import MainContent from './MainContent';
 
 
 function mainArea() {
@@ -12,7 +13,7 @@ function mainArea() {
         <video src={business} muted playsInline autoPlay loop> </video>
         <img src= {circle} alt="alt" className="overlay" />
     <InnerLayout>
-
+      <MainContent />
     </InnerLayout>
     </MainAreaStyled> 
     )
@@ -22,15 +23,15 @@ function mainArea() {
 const MainAreaStyled = styled.div`
 
 width: 100%;
-height: 85vh;
+height: 90vh;
 position: relative;
 overflow: hidden;
 .overlay{
     width: 100%;
     height: 100%;
     position: absolute;
-    right: -400px;
-    top: -100px;
+    right: -250px;
+    top: -200px;
     
 }
 
