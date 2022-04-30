@@ -8,19 +8,19 @@ const data = [
     currency: "500.6 ETH",
   },
   {
-    id: 1,
+    id: 2,
     name: " Emma king",
     image: avatar1,
     currency: "500.6 ETH",
   },
   {
-    id: 1,
+    id: 3,
     name: " Elija Moon ",
     image: avatar1,
     currency: "500.6 ETH",
   },
   {
-    id: 1,
+    id: 4,
     name: "Solomon  Doe",
     image: avatar1,
     currency: "500.6 ETH",
