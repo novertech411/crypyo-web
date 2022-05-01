@@ -1,7 +1,7 @@
 import person from './img/person.jpg';   
-import bitcoin from './img/bitcon';
-import bitcoin2 from './img/bitcoin2';
-import bitcoin3 from './img/bitcoin3';
+import bitcoin from './img/bitcoin.jpg';
+import bitcoin2 from './img/bitcoin2.jpg';
+import bitcoin3 from './img/bitcoin3.jpg';
 
 
 const blogs = [
@@ -14,7 +14,7 @@ const blogs = [
 },
 {
     id: 2,
-    name: '',
+    name: 'king nover',
     image: bitcoin,
     title: 'How To Sell Bitcoin'
 },

@@ -14,7 +14,7 @@ function SellerCard() {
         <div className="profile">
             <img src={item.image} alt="" />
             <div className='text'>
-                <h4>item.name</h4>
+                <h4>{item.name}</h4>
                 <p>{item.currency}</p>
             </div>
         </div>
@@ -36,9 +36,9 @@ transition: all .4s ease-in-out;
 .SellerCard{
     display: flex;
     align-items: center;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0rem;
     .number{
-        padding-right: 0.5rem;
+    padding: 0rem 1rem;
         font-size: 1.6rem;
         opacity: 0.5;
         p{
@@ -49,6 +49,7 @@ transition: all .4s ease-in-out;
 
     .profile{
         display: flex;
+        align-items:left;
     
         img{
             width: 70px;
