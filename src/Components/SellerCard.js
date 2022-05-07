@@ -35,6 +35,8 @@ transition: all .4s ease-in-out;
 
 .SellerCard{
     display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
     align-items: center;
     padding: 1.5rem 0rem;
     .number{
@@ -48,8 +50,13 @@ transition: all .4s ease-in-out;
 
 
     .profile{
+        
         display: flex;
         align-items:left;
+        margin-right:1rem;
+        padding:0px;
+        position:relative;
+        left:-2rem;
     
         img{
             width: 70px;
