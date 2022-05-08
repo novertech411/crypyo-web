@@ -4,6 +4,7 @@ import { InnerLayout } from '../Layout';
 import MainTitle from './MainTitle';
 import SellerCard from './SellerCard';
 import BlogsSection from './BlogsSection';
+import GradientCardSection from './GradientCardSection';
 
 function BodyContent() {
   return (
@@ -17,6 +18,7 @@ function BodyContent() {
 <SellerCard />
 </div>
 <BlogsSection />
+<GradientCardSection />
 </InnerLayout>
     </BodyContentStyled>
   )
