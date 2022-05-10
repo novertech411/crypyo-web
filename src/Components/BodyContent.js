@@ -5,6 +5,7 @@ import MainTitle from './MainTitle';
 import SellerCard from './SellerCard';
 import BlogsSection from './BlogsSection';
 import GradientCardSection from './GradientCardSection';
+import DemonstrationSection from './DemonstrationSection';
 
 function BodyContent() {
   return (
@@ -18,7 +19,8 @@ function BodyContent() {
 <SellerCard />
 </div>
 <BlogsSection />
-<GradientCardSection />
+<GradientCardSection /> 
+<DemonstrationSection />
 </InnerLayout>
     </BodyContentStyled>
   )

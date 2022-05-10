@@ -19,22 +19,24 @@ function GradientCard({ image, avater, name, price, title, ctaButton }) {
             <h6 className="card-name">{title}</h6>
             <p>
               {" "}
-              Price <span className="price">{price}</span> &nsbsp; &nsbsp;{" "}
+              Price <span className="price">{price}</span> &nbsp; &nbsp;{" "}
               <span className="1-text">3 of 15</span>
             </p>
             <p>
-              Highest Bid : &nsbsp; <span className="price">{price}</span>{" "}
+              Highest Bid : &nbsp; <span className="price">{price}</span>{" "}
             </p>
             <div className="duration">
               <p>
-                <img src={time} alt="" />
-                7 Hours Ago
+                <img src={time} alt="" />7 Hours Ago
               </p>
               <p>
+                
                 <img src={heart} alt="" />
                 150 Likes
               </p>
             </div>
+
+           
           </div>
         </div>
       </div>
@@ -45,10 +47,25 @@ function GradientCard({ image, avater, name, price, title, ctaButton }) {
 const GradientCardStyle = styled.div`
   border-radius: 20px;
   font-size: 1rem;
-  transition: all 0.4s ease-in-out;
-
+  transition: all .4s ease-in-out;
+  background: linear-gradient(90deg, #7F41DB 0%, #022894 100%);
+  animation: gradient 5s infinite;
+  @Keyframes gradient {
+      0%{
+        background: linear-gradient(90deg, #7F41DB 0%, #022894 100%);
+      }
+      50%{
+        background: linear-gradient(130deg, #eb3fa9, #395ff6 50%, #022894 );
+      }
+      70%{
+        background: linear-gradient(90deg, #7F41DB 0%, #022894 100%);
+      }
+     100%{
+        background: linear-gradient(130deg, #eb3fa9, #395ff6 50%, #022894 );
+      }
+  }
   .g-card {
-    margin: 2rem;
+    margin: .2rem;
     .inner-content {
       background-color: #091026;
       padding: 0.8rem;
@@ -66,6 +83,7 @@ const GradientCardStyle = styled.div`
           position: absolute;
           left: 50%;
           bottom: -26px;
+          border-radius: 50px;
           background-color: #03091f;
           display: flex;
           align-items: center;
@@ -82,40 +100,39 @@ const GradientCardStyle = styled.div`
           }
         }
       }
-      .card-content{
+      .card-content {
         padding-top: 3rem;
-        .card-title{
+        .card-name {
           font-size: 1.3rem;
           font-weight: 500;
-          padding-bottom: .6rem;
+          padding-bottom: 0.6rem;
         }
 
-        .price{
-          color: #6BBE92;
+        .price {
+          color: #6bbe92;
         }
 
-        .1-text{
+        .1-text {
           opacity: 0.5;
         }
-        .duration{
-   margin-top: 1rem;
-   padding-top: 1rem;
-   border-top: 1px dashed rgba(255, 255, 255, 0.2);
-   display: flex;
-   justify-content: space-between;
-   p{
-     display: flex;
-     align-items: center;
-     img{
-       object-fit: cover;
-       width: 18px;
-       margin-right: .6rem;
-       align-items: center;
-       display: flex;
-       justify-content: center;
-
-     }
-   }
+        .duration {
+          margin-top: 1rem;
+          padding-top: 1rem;
+          border-top: 1px dashed rgba(255, 255, 255, 0.2);
+          display: flex;
+          justify-content: space-between;
+          p {
+            display: flex;
+            align-items: center;
+            img {
+              object-fit: cover;
+              width: 18px;
+              margin-right: 0.6rem;
+              align-items: center;
+              display: flex;
+              justify-content: center;
+            }
+          }
         }
       }
     }
