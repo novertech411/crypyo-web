@@ -4,16 +4,16 @@ import { SectionStyled } from "../Layout";
 import MainTitle from "./MainTitle";
 import person from "../img/person.jpg";
 import avatar from "../img/computer.jpg";
-import bitcoin from "../img/bitcoin.jpg";
+// import bitcoin from "../img/bitcoin.jpg";
 import bitcoin2 from "../img/bitcoin2.jpg";
 import bitcoin3 from "../img/bitcoin3.jpg";
-import person3 from "../img/person3.jpg";
+// import person3 from "../img/person3.jpg";
 import computer from "../img/computer.jpg"
 import GradientCard from "./GradientCard";
 import CtaButton from "./CtaButton";
 
 function DemonstrationSection() {
-    const ctaButton = <CtaButton name={'view more'} />
+    const ctaButton = <CtaButton name={'Place Bid'} />
   return (
     <DemonstrationSectionStyled>
       <SectionStyled>
@@ -26,27 +26,23 @@ function DemonstrationSection() {
             }
           ></MainTitle>
         </div>
-        <div className="gradient-cards-con">
+        <div className="gradient-card-con">
           <GradientCard
             image={person}
             avater={avatar}
             name={"@joel Clock"}
             price={"0.067 Eth"}
             title={"did not have any thing to say "}
+            CtaButton={ctaButton}
           />
-          <GradientCard
-            image={person3}
-            avater={avatar}
-            name={"@joel Clock"}
-            price={"0.067 Eth"}
-            title={"did not have any thing to say "}
-          />
+         
           <GradientCard
             image={bitcoin3}
             avater={avatar}
             name={"@joel Clock"}
             price={"0.067 Eth"}
             title={"did not have any thing to say "}
+            CtaButton={ctaButton}
           />
           <GradientCard
             image={bitcoin2}
@@ -54,21 +50,20 @@ function DemonstrationSection() {
             name={"@joel Clock"}
             price={"0.067 Eth"}
             title={"did not have any thing to say "}
+            CtaButton={ctaButton}
           />
-          <GradientCard
-            image={bitcoin}
-            avater={avatar}
-            name={"@joel Clock"}
-            price={"0.067 Eth"}
-            title={"did not have any thing to say "}
-          />
+         
           <GradientCard
             image={computer}
             avater={avatar}
             name={"@joel Clock"}
             price={"0.067 Eth"}
             title={"did not have any thing to say "}
+            CtaButton={ctaButton}
           />
+        </div>
+        <div className="cta-btn">
+          <CtaButton name={'View More'} />
         </div>
       </SectionStyled>
     </DemonstrationSectionStyled>

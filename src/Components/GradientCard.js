@@ -30,13 +30,11 @@ function GradientCard({ image, avater, name, price, title, ctaButton }) {
                 <img src={time} alt="" />7 Hours Ago
               </p>
               <p>
-                
                 <img src={heart} alt="" />
                 150 Likes
               </p>
             </div>
-
-           
+            <div className="cta-btn">{ctaButton}</div>
           </div>
         </div>
       </div>
@@ -47,25 +45,25 @@ function GradientCard({ image, avater, name, price, title, ctaButton }) {
 const GradientCardStyle = styled.div`
   border-radius: 20px;
   font-size: 1rem;
-  transition: all .4s ease-in-out;
-  background: linear-gradient(90deg, #7F41DB 0%, #022894 100%);
+  transition: all 0.4s ease-in-out;
+  background: linear-gradient(90deg, #7f41db 0%, #022894 100%);
   animation: gradient 5s infinite;
-  @Keyframes gradient {
-      0%{
-        background: linear-gradient(90deg, #7F41DB 0%, #022894 100%);
-      }
-      50%{
-        background: linear-gradient(130deg, #eb3fa9, #395ff6 50%, #022894 );
-      }
-      70%{
-        background: linear-gradient(90deg, #7F41DB 0%, #022894 100%);
-      }
-     100%{
-        background: linear-gradient(130deg, #eb3fa9, #395ff6 50%, #022894 );
-      }
+  @keyframes gradient {
+    0% {
+      background: linear-gradient(90deg, #7f41db 0%, #022894 100%);
+    }
+    50% {
+      background: linear-gradient(130deg, #eb3fa9, #395ff6 50%, #022894);
+    }
+    70% {
+      background: linear-gradient(90deg, #7f41db 0%, #022894 100%);
+    }
+    100% {
+      background: linear-gradient(130deg, #eb3fa9, #395ff6 50%, #022894);
+    }
   }
   .g-card {
-    margin: .2rem;
+    margin: 0.2rem;
     .inner-content {
       background-color: #091026;
       padding: 0.8rem;
