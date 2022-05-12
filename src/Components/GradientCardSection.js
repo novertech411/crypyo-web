@@ -89,10 +89,11 @@ function GradientCardSection() {
             price={"0.067 Eth"}
             title={"did not have any thing to say "}
           />
-           <div className="cta-btn">
+           
+        </div>
+        <div className="cta-btn">
               <CtaButton name={'view more'} />
             </div>
-        </div>
       </SectionStyled>
     </GradientCardSectionStyled>
   );

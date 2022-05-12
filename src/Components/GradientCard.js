@@ -34,7 +34,7 @@ function GradientCard({ image, avater, name, price, title, ctaButton }) {
                 150 Likes
               </p>
             </div>
-            <div className="cta-btn">{ctaButton}</div>
+            <div className="cta-btns">{ctaButton}</div>
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@ const GradientCardStyle = styled.div`
       }
     }
 
-.cta-btn{
+.cta-btns{
   width: 100%;
   a{
    margin: .6rem 0;

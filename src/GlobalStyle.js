@@ -14,6 +14,19 @@ body{
  fonts-size: 1.2rem;
  font-weight: 400 ;
  color: white;
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: #ccc;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+    background: linear-gradient(180deg, #7f41db 0%, #022894 100%);
+    border-radius: 24px;
+}
+
+
 }
 
 a{

@@ -19,7 +19,7 @@ font-size: 1.1rem;
 font-weight: 500;
 cursor: pointer;
 transition: all .4s ease-in-out;
-background:  linear-gradient(130deg, #395FF6 , #EB3FA9);
+background:  linear-gradient(120deg, #395FF6 , #EB3FA9);
 &:last-child{
     margin-left:1.5rem;
 }
