@@ -134,6 +134,19 @@ const GradientCardStyle = styled.div`
         }
       }
     }
+
+.cta-btn{
+  width: 100%;
+  a{
+   margin: .6rem 0;
+   display: inline-block;
+   width: 100%;
+   text-align: center;
+  }
+}
+
+
+
   }
 `;
 export default GradientCard;

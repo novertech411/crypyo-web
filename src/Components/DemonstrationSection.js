@@ -33,7 +33,7 @@ function DemonstrationSection() {
             name={"@joel Clock"}
             price={"0.067 Eth"}
             title={"did not have any thing to say "}
-            CtaButton={ctaButton}
+            ctaButton={ctaButton}
           />
          
           <GradientCard
@@ -42,7 +42,7 @@ function DemonstrationSection() {
             name={"@joel Clock"}
             price={"0.067 Eth"}
             title={"did not have any thing to say "}
-            CtaButton={ctaButton}
+            ctaButton={ctaButton}
           />
           <GradientCard
             image={bitcoin2}
@@ -50,7 +50,7 @@ function DemonstrationSection() {
             name={"@joel Clock"}
             price={"0.067 Eth"}
             title={"did not have any thing to say "}
-            CtaButton={ctaButton}
+            ctaButton={ctaButton}
           />
          
           <GradientCard
@@ -59,12 +59,10 @@ function DemonstrationSection() {
             name={"@joel Clock"}
             price={"0.067 Eth"}
             title={"did not have any thing to say "}
-            CtaButton={ctaButton}
+            ctaButton={ctaButton}
           />
         </div>
-        <div className="cta-btn">
-          <CtaButton name={'View More'} />
-        </div>
+         
       </SectionStyled>
     </DemonstrationSectionStyled>
   );
