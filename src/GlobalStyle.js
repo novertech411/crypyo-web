@@ -14,7 +14,7 @@ body{
  fonts-size: 1.2rem;
  font-weight: 400 ;
  color: white;
-::-webkit-scrollbar{
+::-w  ebkit-scrollbar{
     width: 8px;
 }
 ::-webkit-scrollbar-track{
